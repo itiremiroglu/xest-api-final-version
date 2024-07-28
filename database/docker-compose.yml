@@ -1,0 +1,20 @@
+version: "3.3"
+services:
+  xest-api-final-version-db:
+    container_name: xest-api-final-version-mysql-db
+    image: mysql:5.7
+    restart: always
+    command: --sql_mode="NO_ENGINE_SUBSTITUTION"
+    environment:
+      MYSQL_DATABASE: "xest_api_final_version_db"
+      MYSQL_USER: "user"
+      MYSQL_PASSWORD: "password"
+      MYSQL_ROOT_PASSWORD: "password"
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    volumes:
+      - vol-xest-api-final-version-db:/var/lib/mysql
+volumes:
+  vol-xest-api-final-version-db:
