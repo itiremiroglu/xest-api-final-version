@@ -28,3 +28,5 @@
 | Deleting Some Data | delete     | remove | delete         |
 
 [CyprusCodes.com](http://www.cypruscodes.com)
+
+This project is backend part of Hospital Management System. You can clone and run this project with the commands above.
